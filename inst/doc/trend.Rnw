@@ -1,0 +1,244 @@
+%\VignetteIndexEntry{Trend package}
+%\VignetteDepends{trend}
+%\VignetteKeywords{non-parametric tests}
+%\VignettePackage{trend}
+%\documentclass[a4paper]{amsart}
+%\documentclass[a4paper]{article}
+\documentclass[a4paper]{scrartcl}
+\usepackage{Sweave}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage{amsmath}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\Median}{Median}
+%\SweaveOpts{concordance=TRUE}
+
+\title{Non-Parametric Trend Tests and Change-Point Detection}
+\author{Thorsten Pohlert}
+
+\begin{document}
+\bibliographystyle{jss}
+%\bibliographystyle{elsarticle-harv}
+
+\maketitle
+\begin{small}
+{\copyright} Thorsten Pohlert. This work is licensed under a Creative Commons License (CC BY-ND 4.0). See \url{http://creativecommons.org/licenses/by-nd/4.0/} for details.
+\end{small}
+
+
+\tableofcontents
+
+\section{Trend detection}
+
+\subsection{Mann-Kendall Test}
+The non-parametric Mann-Kendall test is commonly employed to detect monotonic trends in series of environmental data, climate data or hydrological data. The null hypothesis, $H_0$, is that the data 
+come from a population with independent realizations and are identically distributed. The alternative hypothesis, $H_A$, is that the data follow a monotonic trend. The Mann-Kendall test statistic is calculated according to :
+
+\begin{equation}
+S = \sum_{k = 1}^{n-1} \sum_{j = k + 1}^n \sgn\left(X_j - X_k\right)
+\end{equation}
+
+with
+
+\begin{equation}
+\sgn(x) = \left\{ \begin{matrix}
+            1 &  \text{if} & x > 0 \\
+            0 &  \text{if} & x = 0 \\
+            -1 &  \text{if} & x < 0 
+            \end{matrix} \right.
+\end{equation}
+
+The mean of $S$ is $E[S] = 0$ and the variance $\sigma^2$ is
+
+\begin{equation}
+\sigma^2 = \left\{n \left(n-1\right)\left(2n+5\right) - \sum_{j=1}^p t_j\left(t_j - 1\right)\left(2t_j+5\right) \right\} / 18
+\end{equation}
+
+where $p$ is the number of the tied groups in the data set and $t_j$ is the number of data points in the $j$th tied group. The statistic $S$ is approximately normal distributed provided that the following Z-transformation is employed:
+
+\begin{equation}
+Z = \left\{ \begin{matrix}
+     \frac{S-1}{\sigma} &\text{if} & S > 0 \\
+     0 &\text{if} & S = 0 \\
+     \frac{S+1}{\sigma} &\text{if} & S > 0
+ \end{matrix}\right.
+\end{equation}
+
+The statistic $S$ is closely related to Kendall's $\tau$ as given by:
+\begin{equation}
+\tau = \frac{S}{D}
+\end{equation}
+
+where
+
+\begin{equation}
+D = \left[\frac{1}{2}n\left(n-1\right)- 
+     \frac{1}{2}\sum_{j=1}^p t_j\left(t_j - 1\right)\right]^{1/2}
+    \left[\frac{1}{2}n\left(n-1\right) \right]^{1/2}
+\end{equation}
+
+The univariate Mann-Kendall test is envoked as folllows:
+
+<<>>=
+require(trend)
+data(maxau)
+Q <- maxau[,"Q"]
+mk.test(Q)
+@
+
+\subsection{Seasonal Mann-Kendall Test}
+
+The Mann-Kendall statistic for the $g$th season is calculated as:
+
+\begin{equation}
+S_g = \sum_{i = 1}^{n-1} \sum_{j = i + 1}^n \sgn\left(X_{jg} - X_{ig}\right), ~~ g = 1,2, \ldots, m
+\end{equation}
+
+According to \citet{Hirsch_et_al_1982}, the seasonal Mann-Kendall statistic, $\hat{S}$, for the entire series is calculated according to 
+
+\begin{equation}
+\hat{S} = \sum_{g = 1}^m S_g
+\end{equation}
+
+For further information, the reader is referred to \citet[p. 866-869]{Hipel_McLoed_1994} and \citet{Hirsch_et_al_1982}.
+The seasonal Mann-Kendall test ist conducted as follows:
+
+<<>>=
+require(trend)
+smk.test(nottem)
+@
+
+Only the temperature data in Nottingham for August ($S=80$, $p = 0.009$) as well as for September ($S=67$, $p=0.029$) show a significant ($p < 0.05$) positive trend according to the seasonal Mann-Kendall test. Thus, the global trend for the entire series is significant ($S=224$, $p = 0.036$).
+
+\subsection{Correlated Seasonal Mann-Kendall Test}
+The correlated seasonal Mann-Kendall test can be employed, if the data are coreelated with e.g. the pre-ceeding months. For further information the reader is referred to \citet[p. 869-871]{Hipel_McLoed_1994}.
+
+<<>>=
+require(trend)
+csmk.test(nottem)
+@
+
+
+\subsection{Partial Mann-Kendall Test}
+
+This test can be conducted in the presence of co-variates. For full information, the reader is referred to \citet{Libiseller_Grimvall_2002}. 
+
+We assume a correlation between concentration of suspended sediments ($s$) and flow at Maxau.
+
+<<>>=
+data(maxau)
+s <- maxau[,"s"]; Q <- maxau[,"Q"]
+cor.test(s,Q, meth="spearman")
+@
+
+As $s$ is significantly positive related to flow, the partial Mann-Kendall test can be employed as follows. 
+
+<<>>=
+require(trend)
+data(maxau)
+s <- maxau[,"s"]; Q <- maxau[,"Q"]
+partial.mk.test(s,Q)
+@
+
+The test indicates a highly significant decreasing trend ($S=-350.7$, $p < 0.001$) of $s$, when $Q$ is partialled out.
+
+\subsection{Partial correlation trend test}
+This test performs a partial correlation trend test with either the
+     Pearson's or the Spearman's correlation coefficients (r(tx.z)). The magnitude of the linear / monotonic trend with time is computed while the impact of the co-variate is partialled out.
+
+<<>>=
+require(trend)
+data(maxau)
+s <- maxau[,"s"]; Q <- maxau[,"Q"]
+partial.cor.trend.test(s,Q, "spearman")
+@
+
+Likewise to the partial Mann-Kendall test, the partial correlation trend test using Spearman's correlation coefficient indicates a highly significant decreasing trend ($r_{S(ts.Q)} = -0.536$, $n=45$, $p <0.001$) of $s$ when $Q$ is partialled out.
+
+\section{Magnitude of trend}
+
+\subsection{Sen's slope}
+   This test computes both the slope (i.e. linear rate of change) and
+     intercept according to Sen's method. First, a set of linear slopes
+     is calculated as follows:
+
+\begin{equation}
+                         d_k = \frac{X_j - X_i}{j - i}              
+\end{equation}     
+     for $(1 \leq i < j \leq n)$, where $d$ is the slope, $X$ denotes the
+     variable, $n$ is the number of data, and $i$, $j$ are indices.
+
+     Sen's slope is then calculated as the median from all slopes: $b = \Median d_k$. 
+     The intercepts are computed for each timestep $t$ as
+     given by
+
+\begin{equation}
+                               a_t = X_t - b * t                      
+ \end{equation}    
+     and the corresponding intercept is as well the median of all
+     intercepts.
+
+     This function also computes the upper and lower confidence limits
+     for sens slope.
+
+<<>>=
+require(trend)
+s <- maxau[,"s"]
+sens.slope(s)
+@
+
+
+
+\subsection{Seasonal Sen's slope}
+
+Acccording to \citet{Hirsch_et_al_1982} the seasonal Sen's slope is calculated as follows:
+
+\begin{equation}
+d_{ijk} = \frac{X_{ij} - x{ik}}{j - k}
+\end{equation}
+
+for each $(x_{ij}, x{ik}$ pair $i = 1,2, \ldots,m$, where $1 \leq k < j \leq n_i$ and $n_i$ is the number of known values in the $i$th season. The seasonal slope estimator is the median of the $d_{ijk}$ values.
+
+<<>>=
+require(trend)
+sea.sens.slope(nottem)
+@
+
+\section{Change-point detection}
+
+\subsection{Pettitt's test}
+
+The approach after \citet{Pettitt_1979} is commonly applied to detect a single change-point in hydrological series or climate series with continuous data. It tests the $H_0$: The T variables follow one or more distributions that have the same location parameter (no change), against the alternative: a change point exists. The non-parametric statistic is defined as:
+
+\begin{equation}
+K_T = \max \left| U_{t,T}\right|,
+\end{equation}
+
+where
+
+\begin{equation}
+U_{t,T} = \sum_{i=1}^t \sum_{j = t + 1}^T \sgn\left(X_i - X_j \right)
+\end{equation}
+
+
+The change-point of the series is located at $K_T$, provided that the statistic is significant. The significance probability of $K_T$ is approximated for $p \leq 0.05$ with
+
+\begin{equation}
+p \simeq 2 ~ \exp\left(\frac{-6 ~ K_T^2}{T^3 + T^2} \right)
+\end{equation}
+
+The Pettitt-test is conducted in such a way:
+<<>>=
+require(trend)
+data(PagesData)
+pettitt.test(PagesData)
+@
+
+As given in the publication of \citet{Pettitt_1979} the change-point of Page's data is located at $t=17$, with $K_T = 232$ and $p = 0.014$.
+
+
+\bibliography{trend}
+\end{document}
+
+

@@ -1,0 +1,12 @@
+# Register and export dynamic library with entry point
+useDynLib(trend, F_pettitt = pettitt)
+
+# Export specific functions
+export(csmk.test, mk.test,
+       partial.cor.trend.test, partial.mk.test,
+       pettitt.test, smk.test, sea.sens.slope, sens.slope,
+       print.trend.test, summary.trend.test)
+
+# S3 methods
+S3method(print, trend.test)
+S3method(summary, trend.test)
