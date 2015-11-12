@@ -1,5 +1,5 @@
 \name{trend-package}
-\Rdversion{1.1}
+\Rdversion{0.0.2}
 \alias{trend-package}
 \alias{trend}
 \docType{package}
@@ -19,8 +19,8 @@
 \tabular{ll}{
 Package: \tab trend\cr
 Type: \tab Package\cr
-Version: \tab 0.0.1\cr
-Date: \tab 2015-03-23\cr
+Version: \tab 0.1.1\cr
+Date: \tab 2015-11-12\cr
 License: \tab GPL-3\cr
 LazyLoad: \tab yes\cr
 }
@@ -36,6 +36,7 @@ partial.cor.trend.test    \tab  Partial correlation trend test\cr
 partial.mk.test     \tab    Partial Mann-Kendall Test\cr
 pettitt.test        \tab     Pettitt's test for change-point-detection\cr
 sea.sens.slope   \tab     Seasonal Sen's slope and intercept \cr
+%sea.sens.slope.xts   \tab   Seasonal Sen's slope and intercept for irregular time series data \cr
 sens.slope          \tab    Sen's slope and intercept\cr
 smk.test            \tab    Seasonal Mann-Kendall Test\cr
 summary.trend.test  \tab    Summary Method for Class 'trend'\cr
@@ -68,6 +69,9 @@ Maintainer: Thorsten Pohlert <pohlert@gmx.de>
   Pettitt, A. N., (1979). A non-parametric approach to the change point
   problem. Journal of the Royal Statistical Society Series C, Applied
   Statistics 28, 126-135.
+
+  Richard O. Gilbert. (1987). Statistical methods for environmental pollution monitoring. 
+  John Wiley & Sons. pp 230
 
   Sen, P.K., (1968): Estimates of the regression coefficient based on
   Kendall's tau, Journal of the American Statistical Association, 63,
