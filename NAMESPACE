@@ -5,15 +5,11 @@ useDynLib(trend, F_pettitt = pettitt)
 export(csmk.test, mk.test,
        partial.cor.trend.test, partial.mk.test,
        pettitt.test, smk.test, sea.sens.slope, sens.slope,
-       print.trend.test, summary.trend.test) #, sea.sens.slope.xts)
+       print.trend.test, summary.trend.test, wm.test,
+       cs.test)
 
 importFrom("stats", "cor", "cycle", "frequency", "is.ts", "median",
-     "na.fail", "pnorm", "pt", "qnorm", "ts", "tsp")
-#importFrom("xts", "is.xts", "xts", "periodicity", ".indexmin", ".indexhour",
-#      ".indexday", ".indexmon",  ".indexyear")
-#import("zoo")
-#importFrom("zoo", "week", "month", "index")
-     
+     "na.fail", "pnorm", "pt", "qnorm", "ts", "tsp", "na.omit")
 
 # S3 methods
 S3method(print, trend.test)

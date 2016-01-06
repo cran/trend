@@ -126,3 +126,4 @@ data(PagesData) ; pettitt.test(PagesData)
 \keyword{ts}
 \keyword{nonparametric}% __ONLY ONE__ keyword per line
 \keyword{univar}
+\keyword{htest}

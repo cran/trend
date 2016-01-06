@@ -19,27 +19,28 @@
 \tabular{ll}{
 Package: \tab trend\cr
 Type: \tab Package\cr
-Version: \tab 0.1.1\cr
-Date: \tab 2015-11-12\cr
+Version: \tab 0.1.0\cr
+Date: \tab 2016-01-04\cr
 License: \tab GPL-3\cr
 LazyLoad: \tab yes\cr
 }
 
 \tabular{ll}{
+csmk.test           \tab    Correlated Seasonal Mann-Kendall Test\cr
+cs.test            \tab      Cox and Stuart trend test\cr
 maxau  \tab                 Suspended sediment concentration (s) and\cr
        \tab              discharge (Q) for the River Rhine at Maxau,\cr
-                  \tab      annual averages\cr
-csmk.test           \tab    Correlated Seasonal Mann-Kendall Test\cr
+       \tab      annual averages\cr
 mk.test             \tab    Mann-Kendall Trend Test\cr
 PagesData           \tab    Simulated data of Page \cr
 partial.cor.trend.test    \tab  Partial correlation trend test\cr
 partial.mk.test     \tab    Partial Mann-Kendall Test\cr
 pettitt.test        \tab     Pettitt's test for change-point-detection\cr
 sea.sens.slope   \tab     Seasonal Sen's slope and intercept \cr
-%sea.sens.slope.xts   \tab   Seasonal Sen's slope and intercept for irregular time series data \cr
 sens.slope          \tab    Sen's slope and intercept\cr
 smk.test            \tab    Seasonal Mann-Kendall Test\cr
 summary.trend.test  \tab    Summary Method for Class 'trend'\cr
+wm.test            \tab      Wallis and Moore phase-frequency test\cr
 }
 }
 \author{
@@ -54,6 +55,9 @@ Maintainer: Thorsten Pohlert <pohlert@gmx.de>
   CHR (ed., 2010): Das Abflussregime des Rheins und seiner Nebenfluesse
   im 20. Jahrhundert, Report no I-22 of the CHR, p. 172.
 
+  D. R. Cox and A. Stuart (1955), Quick sign tests for trend in location
+  and dispersion. Biometrika 42, 80-95.
+    
   Hipel, K.W. and McLeod, A.I., (2005).
   Time Series Modelling of Water Resources and Environmental Systems.
   \url{http://www.stats.uwo.ca/faculty/aim/1994Book/}.
@@ -70,19 +74,24 @@ Maintainer: Thorsten Pohlert <pohlert@gmx.de>
   problem. Journal of the Royal Statistical Society Series C, Applied
   Statistics 28, 126-135.
 
-  Richard O. Gilbert. (1987). Statistical methods for environmental pollution monitoring. 
-  John Wiley & Sons. pp 230
+  Richard O. Gilbert. (1987). Statistical methods for environmental
+  pollution monitoring. John Wiley & Sons. pp 230
 
+  L. Sachs (1997), \emph{Angewandte Statistik}. Berlin: Springer.
+  
   Sen, P.K., (1968): Estimates of the regression coefficient based on
   Kendall's tau, Journal of the American Statistical Association, 63,
-  1379--1389. 
+  1379--1389.
+
+  C.-D. Schoenwiese (1992), \emph{Praktische Statistik}. Berlin:
+  Gebr. Borntraeger.
+
+  W. A. Wallis and G. H. Moore (1941): A significance test for time series
+  and other ordered observations. Tech. Rep. 1. National Bureau of
+  Economic Research. New York.
 }
 
 \keyword{ package }
-\keyword{ts}
-\keyword{nonparametric}% __ONLY ONE__ keyword per line
-\keyword{univar}
-\keyword{multivariate}
 
 \seealso{
 \code{\link{cor}},
@@ -97,5 +106,7 @@ Maintainer: Thorsten Pohlert <pohlert@gmx.de>
 \code{\link{sea.sens.slope}},
 \code{\link{sens.slope}}
 \code{\link{smk.test}},
-\code{\link{summary.trend.test}}
+\code{\link{summary.trend.test}},
+\code{\link{wm.test}},
+\code{\link{cs.test}}
 }

@@ -24,6 +24,8 @@
 \maketitle
 \begin{small}
 {\copyright} Thorsten Pohlert. This work is licensed under a Creative Commons License (CC BY-ND 4.0). See \url{http://creativecommons.org/licenses/by-nd/4.0/} for details.
+\newline
+For citation please see \texttt{citation(package="trend")}.
 \end{small}
 
 

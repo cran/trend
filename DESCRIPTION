@@ -1,6 +1,6 @@
 Package: trend
-Version: 0.0.2
-Date: 2015-11-12
+Version: 0.1.0
+Date: 2016-01-04
 Title: Non-Parametric Trend Tests and Change-Point Detection
 Author: Thorsten Pohlert
 Maintainer: Thorsten Pohlert <thorsten.pohlert@gmx.de>
@@ -17,6 +17,6 @@ License: GPL-3
 ZipData: yes
 NeedsCompilation: yes
 Suggests: Kendall, zyp
-Packaged: 2015-11-12 08:27:35 UTC; thorpohl
+Packaged: 2016-01-06 08:13:15 UTC; thorpohl
 Repository: CRAN
-Date/Publication: 2015-11-12 13:08:59
+Date/Publication: 2016-01-06 10:01:24
