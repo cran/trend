@@ -1,6 +1,14 @@
 \name{NEWS}
 \title{trend News}
 \encoding{UTF-8}
+\section{CHANGES IN TREND VERSION 0.2.0}{
+  \subsection{NEW FEATURES}{
+    \itemize{
+      \item The function \code{ww.test} for conducting Wald-Wolfowitz
+      test for independence and stationarity was added to the package.
+    }
+  }
+}
 \section{CHANGES IN TREND VERSION 0.1.0}{
   \subsection{NEW FEATURES}{
     \itemize{

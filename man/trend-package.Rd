@@ -19,8 +19,8 @@
 \tabular{ll}{
 Package: \tab trend\cr
 Type: \tab Package\cr
-Version: \tab 0.1.0\cr
-Date: \tab 2016-01-04\cr
+Version: \tab 0.2.0\cr
+Date: \tab 2016-05-14\cr
 License: \tab GPL-3\cr
 LazyLoad: \tab yes\cr
 }
@@ -41,6 +41,7 @@ sens.slope          \tab    Sen's slope and intercept\cr
 smk.test            \tab    Seasonal Mann-Kendall Test\cr
 summary.trend.test  \tab    Summary Method for Class 'trend'\cr
 wm.test            \tab      Wallis and Moore phase-frequency test\cr
+ww.test            \tab      Wald-Wolfowitz test for independence and stationarity\cr
 }
 }
 \author{
@@ -77,6 +78,13 @@ Maintainer: Thorsten Pohlert <pohlert@gmx.de>
   Richard O. Gilbert. (1987). Statistical methods for environmental
   pollution monitoring. John Wiley & Sons. pp 230
 
+  R. K. Rai, A. Upadhyay, C. S. P. Ojha and L. M. Lye (2013),
+  Statistical analysis of hydro-climatic variables. In:
+  R. Y. Surampalli, T. C. Zhang, C. S. P. Ojha, B. R. Gurjar,
+  R. D. Tyagi and C. M. Kao (ed. 2013), \emph{Climate change modelling,
+    mitigation, and adaptation}. Reston, VA: ASCE. doi =
+  10.1061/9780784412718.
+  
   L. Sachs (1997), \emph{Angewandte Statistik}. Berlin: Springer.
   
   Sen, P.K., (1968): Estimates of the regression coefficient based on
@@ -89,6 +97,14 @@ Maintainer: Thorsten Pohlert <pohlert@gmx.de>
   W. A. Wallis and G. H. Moore (1941): A significance test for time series
   and other ordered observations. Tech. Rep. 1. National Bureau of
   Economic Research. New York.
+
+  A. Wald and J. Wolfowitz (1943), An exact test for randomness in the
+  non-parametric case based on serial correlation.
+  \emph{Annual Mathematical Statistics} 14, 378--388.
+
+  WMO (2009), \emph{Guide to Hydrological Practices}. Volume II,
+  Management of Water Resources and Application of Hydrological
+  Practices, WMO-No. 168.
 }
 
 \keyword{ package }
@@ -108,5 +124,6 @@ Maintainer: Thorsten Pohlert <pohlert@gmx.de>
 \code{\link{smk.test}},
 \code{\link{summary.trend.test}},
 \code{\link{wm.test}},
+\code{\link{ww.test}},
 \code{\link{cs.test}}
 }

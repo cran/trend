@@ -1,5 +1,5 @@
-ecc1554ec692b926d37ceb73b46ba328 *DESCRIPTION
-f6ff269f684ad040ead0c0eb12a50e0c *NAMESPACE
+785c6e51e7a3d53e009b07c150974739 *DESCRIPTION
+c4f0784b9edd49ad9184665745eb070d *NAMESPACE
 d6769513335933cc65d91bb7c6df2bfb *R/cs.test.R
 9cffbfde2af839b537b97263c52fe965 *R/csmk.test.R
 63fb6d0bec2ab82115634397f2a9362f *R/mk.test.R
@@ -13,13 +13,14 @@ d6769513335933cc65d91bb7c6df2bfb *R/cs.test.R
 a6974bb9e29f95269c5785e572067180 *R/smk.test.R
 07c860500c014b44fc66750fe55cf3f9 *R/summary.trend.test.R
 64e02aeaea74a178206215d7a73a50cd *R/wm.test.R
-66bae62f6b9859b8c81579ecbc3f11b1 *build/vignette.rds
+ef2118c6b9fd0c7671bfccc7a3fcb3f2 *R/ww.test.R
+d020a3c0a9a57cb86f594e8d072c97a8 *build/vignette.rds
 739583c2968bafaa5a1a3f1867e852e5 *data/PagesData.rda
 8fe532260d420f6e10c98c373e5a99e3 *data/maxau.rda
-94c6a041ceeaa4bcf1d957477721a479 *inst/NEWS.Rd
+9c1e69951d2572700afaa500ff0739bd *inst/NEWS.Rd
 a33ecfca37d47416e862899af18b3891 *inst/doc/trend.R
 b80fdbef1a25df09aa229c52bc1146b5 *inst/doc/trend.Rnw
-8a2284abd052cb708273c5b191b0da00 *inst/doc/trend.pdf
+f777c8b3b4049ec3cbf98a4dda02d3a0 *inst/doc/trend.pdf
 a8ba587fdfd9c78b7c09b36bb158e022 *man/PagesData.Rd
 d2be01bbf84b9818d56f30198178510c *man/cs.test.Rd
 9d621409570be09e3be872bb31fac790 *man/csmk.test.Rd
@@ -33,8 +34,9 @@ e208faf7bac67027ae1abdd724c2cee1 *man/pettitt.test.Rd
 0c8d07879741bb100439906ec98fc4a1 *man/sens.slope.Rd
 330acef4114e77e6c49c14eac468d262 *man/smk.test.Rd
 bebbb3d1d08515348c6526e74de335a5 *man/summary.trend.test.Rd
-f8b61a29cb3289d4b4a1c31b3c926beb *man/trend-package.Rd
+f2a55e679191b39aa0c74b5328c1056d *man/trend-package.Rd
 da80fa566c63284c8a0b9466ad55af37 *man/wm.test.Rd
+7fdd8617ca2ab20ee7150ff2fb49912e *man/ww.test.Rd
 27d33c8b6022ae771e6fa05c644a187c *src/pettitt.f90
 b80fdbef1a25df09aa229c52bc1146b5 *vignettes/trend.Rnw
 f8abd1219aa2dca4a77633df466950b5 *vignettes/trend.bib
