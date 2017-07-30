@@ -1,6 +1,37 @@
 \name{NEWS}
 \title{trend News}
 \encoding{UTF-8}
+\section{CHANGES IN TREND VERSION 1.0.0}{
+  \subsection{NEW FEATURES}{
+    \itemize{
+      \item The function \code{bartels.test} for performing the rank
+      version of von Neumann's ratio test was added.
+      \item The function \code{br.test} for performing the
+      Buishand range test was added.
+      \item The function \code{bu.test} for performing the
+      Buishand U test was added.
+      \item The function \code{snh.test} for performing Alexandersson's
+      standard normal homogeinity test was added.
+      \item The generic function \code{plot.cptest} was added
+      to plot the output of the above functions.
+      \item The function \code{pettitt.test} was recoded in order to
+      increase speed.
+      \item The functions \code{mk.test}, \code{smk.test},
+      \code{cmk.test}, \code{partial.mk.test} and \code{sens.slope}
+      were recoded
+      in order to increase speed. They consistently produce output
+      objects of class \code{"htest"}.
+      \item The generic function \code{summary.smktest} was added
+      to display seasonal output of \code{smk.test}
+      \item The function \code{sea.sens.slope} was recoded and
+      produces a scalar output.
+      \item The function \code{mult.mk.test} was added for multiside
+      or multivariate Mann-Kendall Test.
+      \item The \code{man} pages were revisited and now contain
+      the underlying mathematical functions.
+    }
+  }
+}
 \section{CHANGES IN TREND VERSION 0.2.0}{
   \subsection{NEW FEATURES}{
     \itemize{
