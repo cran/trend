@@ -34,19 +34,32 @@
 }
 
 ## caclulates the Mann-Kendall Score
+## .mkScore <- function(x){
+##    n <- length(x)
+##    S <- 0.0
+##  
+##    for (k in 1:(n-1))
+##    {
+##        for (j in k:n)
+##        {
+##            S <- S + sign(x[j] - x[k]);
+##        }
+##    }
+##    return(S)
+##}
+
+## recoded as recommended from
+## Martin Schmelzer, email from 2017-11-11
 .mkScore <- function(x){
     n <- length(x)
-    S <- 0.0
-  
-    for (k in 1:(n-1))
-    {
-        for (j in k:n)
-        {
-            S <- S + sign(x[j] - x[k]);
-        }
-    }
+    S <- 0.0   
+    for(j in 1:n) {
+        S <- S + sum(sign(x[j] - x[1:j]))
+    }	
     return(S)
 }
+
+
 
 ## Calculate K for partial Mann-Kendall Trend Test
 .K <- function(x, z)

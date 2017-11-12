@@ -41,7 +41,7 @@ S = \sum_{k = 1}^{n-1} \sum_{j = k + 1}^n
 S = \sum_{k = 1}^{n-1} \sum_{j = k + 1}^n
 sgn(x[j] - x[k])}
 
-with \eqn{\mathrm{sgn}}{sgn} the signum function (see \code{link{sign}}).
+with \eqn{\mathrm{sgn}}{sgn} the signum function (see \code{\link{sign}}).
 
 The mean of \eqn{S} is \eqn{\mu = 0}. The variance including the
 correction term for ties is

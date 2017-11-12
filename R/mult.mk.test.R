@@ -18,6 +18,7 @@
 ##    This function computes the Multivariate (Multiside) Mann Kendall test.
 ##  
 ##
+#' @name mult.mk.test
 #' @title Multivariate (Multisite) Mann-Kendall Test
 #' @description
 #' Performs a Multivariate (Multisite) Mann-Kendall test.
@@ -35,7 +36,7 @@
 #' S = \sum_{k = 1}^{n-1} \sum_{j = k + 1}^n
 #' sgn(x[j] - x[k])}
 #' 
-#' with \eqn{\mathrm{sgn}}{sgn} the signum function (see \code{link{sign}}).
+#' with \eqn{\mathrm{sgn}}{sgn} the signum function (see \code{\link{sign}}).
 #'
 #'  The variance - covariance matrix is computed according to
 #'  Libiseller and Grimvall (2002).

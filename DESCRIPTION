@@ -1,6 +1,6 @@
 Package: trend
-Version: 1.0.0
-Date: 2017-07-30
+Version: 1.0.1
+Date: 2017-11-12
 Title: Non-Parametric Trend Tests and Change-Point Detection
 Author: Thorsten Pohlert
 Maintainer: Thorsten Pohlert <thorsten.pohlert@gmx.de>
@@ -23,6 +23,6 @@ Encoding: UTF-8
 ZipData: yes
 NeedsCompilation: yes
 RoxygenNote: 6.0.1
-Packaged: 2017-07-30 11:46:36 UTC; thorsten
+Packaged: 2017-11-12 20:04:17 UTC; thorsten
 Repository: CRAN
-Date/Publication: 2017-07-30 15:27:10 UTC
+Date/Publication: 2017-11-13 00:05:07 UTC

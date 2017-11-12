@@ -1,6 +1,14 @@
 \name{NEWS}
 \title{trend News}
 \encoding{UTF-8}
+\section{CHANGES IN TREND VERSION 1.0.1}{
+  \subsection{MODIFICATION}{
+    \itemize{
+      \item The internal function \code{.mkScore} was slightly
+      recoded to enhance speed. Thanks to Martin Schmelzer.
+    }  
+  }
+}
 \section{CHANGES IN TREND VERSION 1.0.0}{
   \subsection{NEW FEATURES}{
     \itemize{
