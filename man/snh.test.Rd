@@ -2,7 +2,7 @@
 % Please edit documentation in R/snht.test.R
 \name{snh.test}
 \alias{snh.test}
-\title{Standard Normal Homogeinity Test (SNHT) for change-point-detection}
+\title{Standard Normal Homogeinity Test (SNHT) for Change-Point Detection}
 \usage{
 snh.test(x, m = 20000)
 }
@@ -96,6 +96,6 @@ Implications for assessing soil erosion rates.
 \code{\link[strucchange]{efp}}
 \code{\link[strucchange]{sctest.efp}}
 }
-\keyword{{htest}}
-\keyword{{ts}}
-\keyword{{univar}}
+\keyword{htest}
+\keyword{ts}
+\keyword{univar}

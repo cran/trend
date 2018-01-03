@@ -2,7 +2,7 @@
 % Please edit documentation in R/bartels.test.R
 \name{bartels.test}
 \alias{bartels.test}
-\title{Bartels test for Randomness}
+\title{Bartels Test for Randomness}
 \usage{
 bartels.test(x)
 }
@@ -80,7 +80,7 @@ for Randomness, \emph{Journal of the American Statistical Association}
 \concept{
 von-Neumann
 }
-\keyword{{htest}}
-\keyword{{nonparametric}}
-\keyword{{ts}}
-\keyword{{univar}}
+\keyword{htest}
+\keyword{nonparametric}
+\keyword{ts}
+\keyword{univar}

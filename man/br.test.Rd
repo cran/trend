@@ -2,7 +2,7 @@
 % Please edit documentation in R/br.test.R
 \name{br.test}
 \alias{br.test}
-\title{Buishand range test for change-point-detection}
+\title{Buishand Range Test for Change-Point Detection}
 \usage{
 br.test(x, m = 20000)
 }
@@ -85,6 +85,6 @@ Implications for assessing soil erosion rates.
 \code{\link[strucchange]{efp}}
 \code{\link[strucchange]{sctest.efp}}
 }
-\keyword{{htest}}
-\keyword{{ts}}
-\keyword{{univar}}
+\keyword{htest}
+\keyword{ts}
+\keyword{univar}

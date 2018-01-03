@@ -1,5 +1,5 @@
 ##
-##    Copyright (C) 2015, 2016, 2017 Thorsten Pohlert
+##    Copyright (C) 2015-2018 Thorsten Pohlert
 ##
 ##    This program is free software: you can redistribute it and/or modify
 ##    it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 #     - Rd ported to roxygen2
 #     - Function was re-written
 #
-#' @title Pettitt's test for change-point-detection
+#' @title Pettitt's Test for Change-Point Detection
 #' 
 #' @description
 #' Performes a non-parametric test after Pettitt in order to test for a
@@ -86,10 +86,7 @@
 #'
 #' data(PagesData) ; pettitt.test(PagesData)
 #'  
-#' @keywords{ts}
-#' @keywords{nonparametric}
-#' @keywords{univar}
-#' @keywords{htest}
+#' @keywords ts nonparametric univar htest
 #' @export
 pettitt.test <- function(x){    
     na.fail(x)

@@ -1,6 +1,6 @@
 ##    file br.test.R part of package trend
 ##
-##    Copyright (C) 2017 Thorsten Pohlert
+##    Copyright (C) 2018 Thorsten Pohlert
 ##
 ##    This program is free software: you can redistribute it and/or modify
 ##    it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 #     2017-07-01
 #     - initial writing
 #
-#' @title Buishand range test for change-point-detection
+#' @title Buishand Range Test for Change-Point Detection
 #' 
 #' @description
 #' Performes the Buishand range test for change-point detection
@@ -96,9 +96,7 @@
 #'
 #' data(PagesData) ; br.test(PagesData)
 #'  
-#' @keywords{ts}
-#' @keywords{univar}
-#' @keywords{htest}
+#' @keywords ts univar htest
 #' @importFrom stats frequency start ts end is.ts na.fail
 #' @useDynLib 'trend', .registration = TRUE
 #' 

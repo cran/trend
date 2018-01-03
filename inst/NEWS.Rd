@@ -1,6 +1,20 @@
 \name{NEWS}
 \title{trend News}
 \encoding{UTF-8}
+\section{CHANGES IN TREND VERSION 1.1.0}{
+  \subsection{NEW FEATURES}{
+    \itemize{
+      \item The function \code{lanzante.test} for performing
+      a non-parametric single-change point-detection test
+      using either the \code{wilcox.test} or the
+      robust rank order distribution test (\code{rrod.test})
+      was added.
+      \item The function \code{rrod.test} for performing
+      the non-parametric robust rank order distribution test
+      was added.
+    }
+  }
+}
 \section{CHANGES IN TREND VERSION 1.0.1}{
   \subsection{MODIFICATION}{
     \itemize{

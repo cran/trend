@@ -1,6 +1,6 @@
 ##  file wm.test.R part of the package trend
 ##
-##    Copyright (C) 2015-2017  Thorsten Pohlert
+##    Copyright (C) 2015-2018  Thorsten Pohlert
 ##
 ##    This program is free software: you can redistribute it and/or modify
 ##    it under the terms of the GNU General Public License as published by
@@ -15,7 +15,7 @@
 ##    You should have received a copy of the GNU General Public License
 ##    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ##
-#' @title Wallis and Moore Phase-frequency test
+#' @title Wallis and Moore Phase-Frequency Test
 #'
 #' @description
 #'  Performes the non-parametric Wallis and Moore phase-frequency

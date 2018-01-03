@@ -2,7 +2,7 @@
 % Please edit documentation in R/wm.test.R
 \name{wm.test}
 \alias{wm.test}
-\title{Wallis and Moore Phase-frequency test}
+\title{Wallis and Moore Phase-Frequency Test}
 \usage{
 wm.test(x)
 }

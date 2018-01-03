@@ -1,4 +1,4 @@
-## Copyright (C) 2015-2017 Thorsten Pohlert, GPL-3
+## Copyright (C) 2015-2018 Thorsten Pohlert, GPL-3
 #' @name maxau
 #' @docType data
 #' 

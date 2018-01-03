@@ -1,6 +1,6 @@
 ##    file plot.cptest.R part of package trend
 ##
-##    Copyright (C) 2017 Thorsten Pohlert
+##    Copyright (C) 2018 Thorsten Pohlert
 ##
 ##    This program is free software: you can redistribute it and/or modify
 ##    it under the terms of the GNU General Public License as published by

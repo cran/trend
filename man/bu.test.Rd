@@ -2,7 +2,7 @@
 % Please edit documentation in R/bu.test.R
 \name{bu.test}
 \alias{bu.test}
-\title{Buishand U test for change-point-detection}
+\title{Buishand U Test for Change-Point Detection}
 \usage{
 bu.test(x, m = 20000)
 }
@@ -87,6 +87,6 @@ Hydrological Time Series, \emph{Journal of Hydrology} 73, 51--69.
 \code{\link[strucchange]{efp}}
 \code{\link[strucchange]{sctest.efp}}
 }
-\keyword{{htest}}
-\keyword{{ts}}
-\keyword{{univar}}
+\keyword{htest}
+\keyword{ts}
+\keyword{univar}

@@ -1,6 +1,6 @@
       subroutine mcbu (stat, n, m, pval)
 C
-C     Copyright (C) 2017 Thorsten Pohlert
+C     Copyright (C) 2017-2018 Thorsten Pohlert
 C
 C     This program is free software: you can redistribute it and/or modify
 C     it under the terms of the GNU General Public License as published by

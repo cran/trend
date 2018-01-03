@@ -1,5 +1,5 @@
 ##
-##    Copyright (C) 2017 Thorsten Pohlert
+##    Copyright (C) 2018 Thorsten Pohlert
 ##
 ##    This program is free software: you can redistribute it and/or modify
 ##    it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 #     2017-07-12
 #     - Initial writing
 #
-#' @title Bartels test for Randomness
+#' @title Bartels Test for Randomness
 #' 
 #' @description
 #' Performes a rank version of von Neumann's ratio test as proposed by
@@ -91,10 +91,7 @@
 #' x <- c(4, 7, 16, 14, 12, 3, 9, 13, 15, 10, 6, 5, 8, 2, 1, 11, 18, 17)
 #' bartels.test(x)
 #'  
-#' @keywords{ts}
-#' @keywords{nonparametric}
-#' @keywords{univar}
-#' @keywords{htest}
+#' @keywords ts nonparametric univar htest
 #' @concept von-Neumann
 #' @importFrom extraDistr pnsbeta
 #' @importFrom stats pnorm

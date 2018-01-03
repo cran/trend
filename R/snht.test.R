@@ -1,6 +1,6 @@
 ##    file snh.test.R part of package trend
 ##
-##    Copyright (C) 2017 Thorsten Pohlert
+##    Copyright (C) 2018 Thorsten Pohlert
 ##
 ##    This program is free software: you can redistribute it and/or modify
 ##    it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 #     2017-07-06
 #     - initial writing
 #
-#' @title Standard Normal Homogeinity Test (SNHT) for change-point-detection
+#' @title Standard Normal Homogeinity Test (SNHT) for Change-Point Detection
 #' 
 #' @description
 #' Performes the Standard Normal Homogeinity Test (SNHT)
@@ -108,9 +108,7 @@
 #'
 #' data(PagesData) ; snh.test(PagesData)
 #'  
-#' @keywords{ts}
-#' @keywords{univar}
-#' @keywords{htest}
+#' @keywords ts univar htest
 #' @importFrom stats sd
 #' @useDynLib 'trend', .registration = TRUE
 #' @export

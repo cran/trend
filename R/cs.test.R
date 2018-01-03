@@ -1,6 +1,6 @@
 ##  file cs.test.R part of the package trend
 ##
-##    Copyright (C) 2015, 2016  Thorsten Pohlert
+##    Copyright (C) 2015-2018  Thorsten Pohlert
 ##
 ##    This program is free software: you can redistribute it and/or modify
 ##    it under the terms of the GNU General Public License as published by

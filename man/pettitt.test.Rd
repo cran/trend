@@ -2,7 +2,7 @@
 % Please edit documentation in R/pettitt.test.R
 \name{pettitt.test}
 \alias{pettitt.test}
-\title{Pettitt's test for change-point-detection}
+\title{Pettitt's Test for Change-Point Detection}
 \usage{
 pettitt.test(x)
 }
@@ -74,7 +74,7 @@ Implications for assessing soil erosion rates.
 \code{\link[strucchange]{efp}}
 \code{\link[strucchange]{sctest.efp}}
 }
-\keyword{{htest}}
-\keyword{{nonparametric}}
-\keyword{{ts}}
-\keyword{{univar}}
+\keyword{htest}
+\keyword{nonparametric}
+\keyword{ts}
+\keyword{univar}

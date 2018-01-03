@@ -1,6 +1,6 @@
 ##    file bu.test.R part of package trend
 ##
-##    Copyright (C) 2017 Thorsten Pohlert
+##    Copyright (C) 2018 Thorsten Pohlert
 ##
 ##    This program is free software: you can redistribute it and/or modify
 ##    it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 #     2017-07-01
 #     - initial writing
 #
-#' @title Buishand U test for change-point-detection
+#' @title Buishand U Test for Change-Point Detection
 #' 
 #' @description
 #' Performes the Buishand U test for change-point detection
@@ -99,9 +99,7 @@
 #' data(PagesData)
 #' bu.test(PagesData)
 #'  
-#' @keywords{ts}
-#' @keywords{univar}
-#' @keywords{htest}
+#' @keywords ts univar htest
 #' @useDynLib 'trend', .registration = TRUE
 #' @importFrom stats na.fail is.ts start end frequency ts
 #' @export
