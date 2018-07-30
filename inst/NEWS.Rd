@@ -1,6 +1,16 @@
 \name{NEWS}
 \title{trend News}
 \encoding{UTF-8}
+\section{CHANGES IN TREND VERSION 1.1.1}{
+  \subsection{NEW FEATURES}{
+    \itemize{
+      \item The references and description 
+      in the .Rd file for the function \code{rrod.test} 
+      was extended in order to address the 
+      original authors Fligner and Pollicello.
+      }
+   }
+}
 \section{CHANGES IN TREND VERSION 1.1.0}{
   \subsection{NEW FEATURES}{
     \itemize{

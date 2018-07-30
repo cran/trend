@@ -31,7 +31,7 @@
 #' @details
 #'  This function performs a partial correlation trend test using either
 #'  the "pearson" correlation coefficient, or the "spearman" rank
-#'  correlation coefficient (Hipel and McLoed (2005), p. 882).
+#'  correlation coefficient (Hipel and McLoed (1994), p. 882).
 #'  The partial correlation coefficient
 #'  for the response variable "x" with time "t",
 #'  when the effect of the explanatory variable "z" is partialled out,
@@ -77,9 +77,9 @@
 #' \item{null.value}{The value of the null hypothesis}
 #'
 #' @references
-#'  Hipel, K.W. and McLeod, A.I., (2005).
-#'  Time Series Modelling of Water Resources and Environmental Systems.
-#'  \url{http://www.stats.uwo.ca/faculty/aim/1994Book/}.
+#' Hipel, K.W. and McLeod, A.I. (1994),
+#' \emph{Time Series Modelling of Water Resources and Environmental Systems}. 
+#' New York: Elsevier Science.
 #'
 #' Bahrenberg, G., Giese, E. and Nipper, J., (1992): Statistische Methoden
 #' in der Geographie, Band 2 Multivariate Statistik, Teubner, Stuttgart.

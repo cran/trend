@@ -40,9 +40,9 @@
 #' @return numeric, Seasonal Sen's slope.
 #'
 #' @references
-#' Hipel, K.W. and McLeod, A.I. (2005), \emph{Time Series Modelling of Water
-#' Resources and Environmental Systems}.
-#' \url{http://www.stats.uwo.ca/faculty/aim/1994Book/}.
+#' Hipel, K.W. and McLeod, A.I. (1994),
+#' \emph{Time Series Modelling of Water Resources and Environmental Systems}. 
+#' New York: Elsevier Science.
 #'
 #' Hirsch, R., J. Slack, R. Smith (1982), T
 #' echniques of Trend Analysis for Monthly Water Quality Data.

@@ -88,12 +88,11 @@ mult.mk.test(hcb)
 
 }
 \references{
-Hipel, K.W. and McLeod, A.I. (2005),
-\emph{Time Series Modelling of Water Resources and Environmental Systems}.
-Electronic reprint of our book orginally published in 1994.
-\url{http://www.stats.uwo.ca/faculty/aim/1994Book/}.
+Hipel, K.W. and McLeod, A.I. (1994),
+\emph{Time Series Modelling of Water Resources and Environmental Systems}. 
+New York: Elsevier Science.
 
-D. P. Lettenmeier (1988), Multivariate nonparametric tests for trend
+Lettenmeier, D.P. (1988), Multivariate nonparametric tests for trend
 in water quality. \emph{Water Resources Bulletin} 24, 505--512.
 
 Libiseller, C. and Grimvall, A. (2002),

@@ -41,8 +41,8 @@ the data contain \code{NA}s.  Defaults to \code{getOption("na.action")}.}
 A list with class \code{"htest"}.
 }
 \description{
-Performs a robust rank-order distributional test
-for location as proposed by Siegel and Castellan (1988).
+Performs Fligner-Pollicello robust rank-order distributional test
+for location.
 }
 \details{
 The non-parametric RROD two-sample test can be used to test
@@ -98,6 +98,10 @@ rrod.test(Ozone ~ Month, data = airquality,
             subset = Month \%in\% c(5, 8)) 
 }
 \references{
+Fligner, M. A., Pollicello, G. E. III. (1981), Robust Rank Procedures for 
+the Behrens-Fisher Problem, \emph{Journal of the 
+American Statistical Association}, 76, 162--168.
+
 Lanzante, J. R. (1996), Resistant, robust and non-parametric
 techniques for the analysis of climate data: Theory and examples,
 including applications to historical radiosonde station data,

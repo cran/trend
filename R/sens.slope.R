@@ -55,8 +55,9 @@
 #' \item{method}{character string that denotes the test}
 #'
 #' @references
-#'    Hipel, K.W. and McLeod, A.I., (2005). \emph{Time Series Modelling of Water
-#'    Resources and Environmental Systems}. \url{http://www.stats.uwo.ca/faculty/aim/1994Book/}.
+#' Hipel, K.W. and McLeod, A.I. (1994),
+#' \emph{Time Series Modelling of Water Resources and Environmental Systems}. 
+#' New York: Elsevier Science.
 #'
 #'    Sen, P.K. (1968), Estimates of the regression coefficient based on
 #'    Kendall's tau, \emph{Journal of the American Statistical Association} 63,
