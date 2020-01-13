@@ -18,7 +18,7 @@
 ##    This function computes the Multivariate (Multiside) Mann Kendall test.
 ##  
 ##
-#' @name mult.mk.test
+#' @rdname mult.mk.test
 #' @title Multivariate (Multisite) Mann-Kendall Test
 #' @description
 #' Performs a Multivariate (Multisite) Mann-Kendall test.

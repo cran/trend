@@ -16,6 +16,7 @@
 ##
 ##
 #' @title Object summaries
+#' @rdname summary.smktest
 #' @description
 #' Generic function "summary" for objects of class \code{smktest}. 
 #' @param object an object of class \code{smktest}

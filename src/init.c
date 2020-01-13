@@ -1,41 +1,28 @@
-#include <R.h>
-#include <Rinternals.h>
+#include <R_ext/RS.h>
+#include <stdlib.h> // for NULL
 #include <R_ext/Rdynload.h>
-#include <R_ext/Visibility.h>
-#include "trend.h"
-/* 
-    Copyright (C) 2017-2018 Thorsten Pohlert
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+/* Created by
+ * tools::package_native_routine_registration_skeleton
+ * and manually modified by 
+ * Thorsten Pohlert 2020-01-11
 */
 
-/* define argument types */
-static R_NativePrimitiveArgType mcbr_f[] = {
-  REALSXP, INTSXP, INTSXP, REALSXP};
+/* .Fortran calls */
+extern void F77_NAME(mcbr)(double *r, int *n, int *m, double *pval);
+extern void F77_NAME(mcbu)(double *r, int *n, int *m, double *pval);
+extern void F77_NAME(mcsnht)(double *r, int *n, int *m, double *pval);
 
-/* define Fortran entry points, their names, nr of arguments*/
-static const R_FortranMethodDef FortEntries[]  = {
-  {"mcbr", (DL_FUNC) &F77_SUB(mcbr), 4, mcbr_f},
-  {"mcbu", (DL_FUNC) &F77_SUB(mcbu), 4, mcbr_f},
-  {"mcsnht", (DL_FUNC) &F77_SUB(mcsnht), 4, mcbr_f},
-  {NULL, 0}
+static const R_FortranMethodDef FortranEntries[] = {
+    {"mcbr",   (DL_FUNC) &F77_NAME(mcbr),   4},
+    {"mcbu",   (DL_FUNC) &F77_NAME(mcbu),   4},
+    {"mcsnht", (DL_FUNC) &F77_NAME(mcsnht), 4},
+    {NULL, NULL, 0}
 };
 
-// register
-void attribute_visible R_init_trend(DllInfo *dll)
+void R_init_trend(DllInfo *dll)
 {
-  R_registerRoutines(dll, NULL, NULL, FortEntries, NULL);
-  R_useDynamicSymbols(dll, FALSE);
-  R_forceSymbols(dll, TRUE);
+    R_registerRoutines(dll, NULL, NULL, FortranEntries, NULL);
+    R_useDynamicSymbols(dll, FALSE);
+    R_forceSymbols(dll, TRUE);
 }

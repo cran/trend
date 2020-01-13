@@ -4,8 +4,7 @@
 \alias{mk.test}
 \title{Mann-Kendall Trend Test}
 \usage{
-mk.test(x, alternative = c("two.sided", "greater", "less"),
-  continuity = TRUE)
+mk.test(x, alternative = c("two.sided", "greater", "less"), continuity = TRUE)
 }
 \arguments{
 \item{x}{a vector of class "numeric" or a time series object of class "ts"}

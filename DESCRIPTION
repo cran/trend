@@ -1,9 +1,11 @@
 Package: trend
-Version: 1.1.1
-Date: 2018-07-18
+Version: 1.1.2
+Date: 2020-01-11
 Title: Non-Parametric Trend Tests and Change-Point Detection
-Author: Thorsten Pohlert
-Maintainer: Thorsten Pohlert <thorsten.pohlert@gmx.de>
+Authors@R: person(given = "Thorsten", family = "Pohlert",
+                 email = "thorsten.pohlert@gmx.de",
+                 comment = c(ORCID = "0000-0003-3855-3025"),
+                 role = c("aut", "cre"))
 Depends: R (>= 3.0)
 Description: The analysis of environmental data often requires
 	     the detection of trends and change-points. 
@@ -25,7 +27,9 @@ License: GPL-3
 Encoding: UTF-8
 ZipData: yes
 NeedsCompilation: yes
-RoxygenNote: 6.0.1
-Packaged: 2018-07-30 16:47:07 UTC; thorsten
+RoxygenNote: 7.0.2
+Packaged: 2020-01-11 15:30:51 UTC; thorsten
+Author: Thorsten Pohlert [aut, cre] (<https://orcid.org/0000-0003-3855-3025>)
+Maintainer: Thorsten Pohlert <thorsten.pohlert@gmx.de>
 Repository: CRAN
-Date/Publication: 2018-07-30 17:30:03 UTC
+Date/Publication: 2020-01-13 09:40:02 UTC

@@ -77,9 +77,7 @@ for Randomness, \emph{Journal of the American Statistical Association}
 \code{\link{ww.test}},
 \code{\link{wm.test}}
 }
-\concept{
-von-Neumann
-}
+\concept{von-Neumann}
 \keyword{htest}
 \keyword{nonparametric}
 \keyword{ts}

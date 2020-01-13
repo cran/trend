@@ -5,8 +5,7 @@
 \alias{Hirsch-Slack-Test}
 \title{Seasonal Mann-Kendall Trend Test}
 \usage{
-smk.test(x, alternative = c("two.sided", "greater", "less"),
-  continuity = TRUE)
+smk.test(x, alternative = c("two.sided", "greater", "less"), continuity = TRUE)
 }
 \arguments{
 \item{x}{a time series object with class \code{ts} comprising >= 2 seasons;
@@ -89,9 +88,7 @@ Mann-Kendall tests for trend detection in the presence of covariates.
 R. Hirsch, J. Slack, R. Smith (1982), Techniques of Trend Analysis for
 Monthly Water Quality Data, \emph{Water Resources Research} 18, 107--121.
 }
-\concept{
-Hirsch-Slack-Test
-}
+\concept{Hirsch-Slack-Test}
 \keyword{nonparametric}
 \keyword{ts}
 \keyword{univar}

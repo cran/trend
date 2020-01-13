@@ -1,5 +1,0 @@
-# Testing
-#PKG_FFLAGS = -std=f95 -Wall -pedantic -fimplicit-none -ffixed-form
-#PKG_CFLAGS = -Wall -pedantic
-
-##PKG_FFLAGS = -ffixed-form

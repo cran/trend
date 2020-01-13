@@ -8,8 +8,7 @@
 \usage{
 rrod.test(x, ...)
 
-\method{rrod.test}{default}(x, y, alternative = c("two.sided", "less",
-  "greater"), ...)
+\method{rrod.test}{default}(x, y, alternative = c("two.sided", "less", "greater"), ...)
 
 \method{rrod.test}{formula}(formula, data, subset, na.action, ...)
 }
