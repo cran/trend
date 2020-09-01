@@ -1,6 +1,16 @@
 \name{NEWS}
 \title{trend News}
 \encoding{UTF-8}
+\section{CHANGES IN TREND VERSION 1.1.3 (2020-08-31)}{
+  \subsection{OTHER CHANGES}{
+    \itemize{
+      \item CRAN check detected undeclared packages
+      that were referred to in Rd files.
+      The \sQuote{DESCRIPTION} file was updated 
+      with \sQuote{Suggests}.
+    }
+  }
+}
 \section{CHANGES IN TREND VERSION 1.1.2 (2020-01-11)}{
   \subsection{OTHER CHANGES}{
     \itemize{

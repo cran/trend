@@ -4,12 +4,14 @@
 \name{maxau}
 \alias{maxau}
 \title{Annual suspended sediment concentration and flow data, River Rhine}
-\format{a time series object of class "mts"
+\format{
+a time series object of class "mts"
 
 \itemize{
 \item s. first column, suspended sediment concentration
 \item Q. second column, average discharge
-}}
+}
+}
 \source{
 Bundesanstalt für Gewässerkunde, Koblenz, Deutschland
 (Federal Institute of Hydrology, Koblenz, Germany)

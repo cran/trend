@@ -1,5 +1,4 @@
 ### R code from vignette source 'trend.Rnw'
-### Encoding: UTF-8
 
 ###################################################
 ### code chunk number 1: trend.Rnw:85-89

@@ -4,7 +4,8 @@
 \name{hcb}
 \alias{hcb}
 \title{Monthly concentration of particle bound HCB, River Rhine}
-\format{a time series object of class "mts"
+\format{
+a time series object of class "mts"
 
 \itemize{
 \item we first column, series of station Weil (RKM 164.3)
@@ -14,7 +15,8 @@ Karlsruhe-Iffezheim (RKM 333.9)
 \item ko fourth column, series of station Koblenz (RKM 590.3)
 \item bh fith column, series of station Bad Honnef(RKM 645.8)
 \item bi sixth column, series of station Bimmen (RKM 865.0)
-}}
+}
+}
 \source{
 International Commission for the Protection of the River Rhine
 \url{http://iksr.bafg.de/iksr/}

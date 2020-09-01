@@ -5,7 +5,9 @@
 \alias{PagesData}
 \title{Simulated data of Page (1955) as test-example
 for change-point detection}
-\format{a vector that contains 40 elements}
+\format{
+a vector that contains 40 elements
+}
 \usage{
 data(PagesData)
 }
