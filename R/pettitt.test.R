@@ -98,7 +98,8 @@ pettitt.test <- function(x){
     Uka <- abs(Uk)
     U <- max(Uka)
     K <- k[Uka == U]
-    pval <- 2.0 * exp(( -6.0 * U^2) / (n^3 + n^2))
+    ## ensure not to exceed 1
+    pval <- min(1, 2.0 * exp(( -6.0 * U^2) / (n^3 + n^2)))
 
     if (is.ts(x)){
         fr <- frequency(x)

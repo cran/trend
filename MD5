@@ -1,4 +1,4 @@
-8415a14aa732cf1b9729ccb2f5ec63a7 *DESCRIPTION
+82cd1c255fb4c3e0053201b289bc7a66 *DESCRIPTION
 79f43f37ad613a3ba39091bcca02d7fc *NAMESPACE
 2594b50ea10716f3e0a66ca0cc8be2f6 *R/PagesData.R
 e01edb7d8c4664abafd75a3efa0d544a *R/bartels.test.R
@@ -13,7 +13,7 @@ fc8a5fc082b8e9a1488a639107b384a3 *R/csmk.test.R
 33aada4921a71c74fbdaf8186f6a58fd *R/mult.mk.test.R
 64888dd023e0e858775b25e67b0125e7 *R/partial.cor.trend.test.R
 9be219a6cbd35137188f9f0c3e202b3a *R/partial.mk.test.R
-e9681450d1fa3e32b2a6c365fbba4277 *R/pettitt.test.R
+89068bf06c136883968da36596d3f494 *R/pettitt.test.R
 54f0a9b3dbc2f409bb4171b22dc5bd73 *R/plot.cptest.R
 4ad7fedd5ced52437ac170bd1f37991a *R/rrod.test.R
 05643d036caae30405f3856417a203d0 *R/sea.sens.slope.R
@@ -28,10 +28,10 @@ c43b5c7cae1d3a582d71773c9b05b896 *R/wm.test.R
 739583c2968bafaa5a1a3f1867e852e5 *data/PagesData.rda
 8ceb933e541d3ed0161c675b68d2650c *data/hcb.rdata
 8fe532260d420f6e10c98c373e5a99e3 *data/maxau.rdata
-7e936a241f31ca74b807d001ce07b4e1 *inst/NEWS.Rd
+84adcd6f2e0b82dd5c240253ad1a0d07 *inst/NEWS.Rd
 34bdb1d7be76c9cdc67bde549254a5b9 *inst/doc/trend.R
 596fcb7932f0d44fafd2973fc7734a1b *inst/doc/trend.Rnw
-2e6a34d9194f3a01906fa6f134f1bf3c *inst/doc/trend.pdf
+28c0a6a5a2cb6d1fc5b8a72a3e9b1646 *inst/doc/trend.pdf
 c7de17df9fbb18fede38aab06c7785e7 *man/PagesData.Rd
 d647537d797e318f5ad8b583f9d504db *man/bartels.test.Rd
 0fe1676929fa682ee2efd53f83638885 *man/br.test.Rd

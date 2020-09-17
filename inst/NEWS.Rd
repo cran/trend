@@ -1,6 +1,15 @@
 \name{NEWS}
 \title{trend News}
 \encoding{UTF-8}
+\section{CHANGES IN TREND VERSION 1.1.4 (2020-09-17)}{
+  \subsection{OTHER CHANGES}{
+    \itemize{
+      \item In function \code{pettitt.test} the p-value
+      is now calculated as \code{pval <- min(1, 2.0 * exp(( -6.0 * U^2) / (n^3 + n^2))) to ensure that p does not exceed one.
+}
+    }
+  }
+}
 \section{CHANGES IN TREND VERSION 1.1.3 (2020-08-31)}{
   \subsection{OTHER CHANGES}{
     \itemize{
