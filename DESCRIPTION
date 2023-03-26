@@ -1,6 +1,6 @@
 Package: trend
-Version: 1.1.4
-Date: 2020-09-17
+Version: 1.1.5
+Date: 2023-03-26
 Title: Non-Parametric Trend Tests and Change-Point Detection
 Authors@R: person(given = "Thorsten", family = "Pohlert",
                  email = "thorsten.pohlert@gmx.de",
@@ -22,15 +22,15 @@ Description: The analysis of environmental data often requires
 	     Bartels rank von Neumann's ratio test, Wald-Wolfowitz Test)
 	     and the two sample Robust Rank-Order Distributional Test.
 Imports: extraDistr (>= 1.8.0)
-Suggests: strucchange, Kendall, psych
+Suggests: strucchange, Kendall, psych, datasets
 Classification/MSC-2010: 62F03, 62G10, 62M10, 62P12
 License: GPL-3
 Encoding: UTF-8
 ZipData: yes
 NeedsCompilation: yes
-RoxygenNote: 7.1.1
-Packaged: 2020-09-17 19:12:41 UTC; thorsten
+RoxygenNote: 7.2.2
+Packaged: 2023-03-26 12:38:51 UTC; thorsten
 Author: Thorsten Pohlert [aut, cre] (<https://orcid.org/0000-0003-3855-3025>)
 Maintainer: Thorsten Pohlert <thorsten.pohlert@gmx.de>
 Repository: CRAN
-Date/Publication: 2020-09-17 19:50:03 UTC
+Date/Publication: 2023-03-26 17:20:02 UTC

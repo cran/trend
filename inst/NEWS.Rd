@@ -1,6 +1,17 @@
 \name{NEWS}
 \title{trend News}
 \encoding{UTF-8}
+\section{CHANGES IN TREND VERSION 1.1.5 (2023-03-26)}{
+  \subsection{OTHER CHANGES}{
+    \itemize{
+     \item R_forceSymbol in file \code{init.c} eas removed (i.e. not set to TRUE) 
+     \item The package \code{datasets} was included in the \code{Suggests} field 
+     of the DESCRIPTION file.
+     \item Changed \code{url} into \code{doi} for some references
+     in Rd-files.
+     }
+  }
+}
 \section{CHANGES IN TREND VERSION 1.1.4 (2020-09-17)}{
   \subsection{OTHER CHANGES}{
     \itemize{

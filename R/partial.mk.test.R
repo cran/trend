@@ -92,7 +92,7 @@
 #' Libiseller, C. and Grimvall, A., (2002).
 #' Performance of partial Mann-Kendall tests for trend detection in the
 #' presence of covariates. Environmetrics 13, 71--84,
-#' \url{http://dx.doi.org/10.1002/env.507}.
+#' \doi{10.1002/env.507}.
 #'
 #' @note 
 #'  Current Version is for complete observations only.

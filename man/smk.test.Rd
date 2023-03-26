@@ -83,7 +83,7 @@ New York: Elsevier Science.
 
 Libiseller, C. and Grimvall, A. (2002), Performance of partial
 Mann-Kendall tests for trend detection in the presence of covariates.
-\emph{Environmetrics} 13, 71--84, \url{http://dx.doi.org/10.1002/env.507}.
+\emph{Environmetrics} 13, 71--84, \doi{10.1002/env.507}.
 
 R. Hirsch, J. Slack, R. Smith (1982), Techniques of Trend Analysis for
 Monthly Water Quality Data, \emph{Water Resources Research} 18, 107--121.

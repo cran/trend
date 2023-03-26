@@ -33,13 +33,12 @@
 #' 
 #' @source
 #' International Commission for the Protection of the River Rhine
-#' \url{http://iksr.bafg.de/iksr/}
 #'
 #' @references
 #' T. Pohlert, G. Hillebrand, V. Breitung (2011), Trends of persistent
 #' organic pollutants in the suspended matter of the River Rhine,
 #' \emph{Hydrological Processes} 25, 3803--3817.
-#' \url{http://dx.doi.org/10.1002/hyp.8110}
+#' \doi{10.1002/hyp.8110}
 #' 
 #' @examples
 #' data(hcb)

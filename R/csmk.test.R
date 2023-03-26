@@ -64,15 +64,6 @@
 #' Ties are not corrected. Current Version is for complete observations only.
 #'
 #' @inherit mk.test references 
-# @references
-#  Hipel, K.W. and McLeod, A.I. (2005),
-# \emph{Time Series Modelling of Water Resources and Environmental Systems}.
-# Electronic reprint of our book orginally published in 1994.
-# \url{http://www.stats.uwo.ca/faculty/aim/1994Book/}.
-#
-# Libiseller, C. and Grimvall, A. (2002),
-# Performance of partial Mann-Kendall tests for trend detection in the
-# presence of covariates. \emph{Environmetrics} 13, 71-84, \url{http://dx.doi.org/10.1002/env.507}.
 #
 #' @seealso
 #' \code{\link{cor}},
