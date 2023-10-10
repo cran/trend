@@ -53,14 +53,14 @@ C     Get normal random deviates
          end do
          
 C     mean(x)
-         mu = sum(x) / real(n, kind = 8)
+         mu = sum(x) / dble(n)
          
 C     sd(x)
          tmp = zero
          do i = 1, n
             tmp = tmp + (x(i) - mu)**two
          end do
-         sigma = sqrt(tmp / real(n, kind=8))
+         sigma = sqrt(tmp / dble(n))
 
 C     get Tk
          do k = 1, n - 1
@@ -72,12 +72,12 @@ C     get Tk
             do i = k + 1, n
                z2 = z2 + (x(i) - mu) / sigma
             end do
-            z1 = z1 / real(k, kind=8)
-            z2 = z2 / real((n - k), kind = 8)
+            z1 = z1 / dble(k)
+            z2 = z2 / dble((n - k))
 
             
-            Tk(k) = real(k, kind = 8) * z1**two +
-     *           (real(n - k, kind = 8)) * z2**two
+            Tk(k) = dble(k) * z1**two +
+     *           (dble(n - k)) * z2**two
          end do
 
          T(j) = maxval(Tk)

@@ -18,6 +18,7 @@
 \author{Thorsten Pohlert}
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 \bibliographystyle{jss}
 %\bibliographystyle{elsarticle-harv}
 

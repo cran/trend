@@ -50,14 +50,14 @@ C     Get normal random deviates
          end do
          
 C     mean(x)
-         mu = sum(x) / real(n, kind = 8)
+         mu = sum(x) / dble(n)
          
 C     sd(x)
          tmp = zero
          do i = 1, n
             tmp = tmp + (x(i) - mu)**two
          end do
-         sigma = sqrt(tmp / real(n, kind=8))
+         sigma = sqrt(tmp / dble(n))
 
 C     get Sk
          do k = 1, n
@@ -73,8 +73,8 @@ C     get Sk
          do k = 1, n-1
             tmp = tmp + (sk(k) / sigma)**two
          end do
-         statm(j) = one / (real(n, kind = 8) * 
-     *        (real(n, kind = 8) + one)) * tmp  
+         statm(j) = one / (dble(n) * 
+     *        (dble(n) + one)) * tmp  
   
       end do
       call rndend()

@@ -28,6 +28,7 @@ C     local
             cnt = cnt + 1
          end if
       end do
-      getpval = real(cnt, kind=8) / real(n, kind=8)
+C     changed for portability 
+      getpval = dble(cnt) / dble(n)
       return
       end function
