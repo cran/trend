@@ -348,7 +348,7 @@ plot(Nile); plot(res)
 @ 
 
 \subsection{Standard Normal Homogeinity Test}
-In the Standard Normal Homogeinity Test \citep{Alexandersson_1982}, the null hypothesis is the same as in the Buishand Range Test (see Eq. \ref{eq:brt:hyp}). The test statistic is
+In the Standard Normal Homogeinity Test \citep{Alexandersson_1986}, the null hypothesis is the same as in the Buishand Range Test (see Eq. \ref{eq:brt:hyp}). The test statistic is
 
 \begin{equation}
   T_k = k z_1^2 + \left(n - k\right) z_2^2 \qquad (1 \le k < n)

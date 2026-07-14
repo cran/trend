@@ -1,6 +1,15 @@
 \name{NEWS}
 \title{trend News}
 \encoding{UTF-8}
+\section{CHANGES IN TREND VERSION 1.1.7 (2026-07-14)}{
+\subsection{OTHER CHANGES}{
+    \itemize{
+     \item Fixed BibTex reference to Alexandersson (1986) 
+     in vignettes. (Note as of CRAN-check Check: re-building of vignette outputs
+     from 2026-07-14 14:52:07 CEST. )
+    }
+  }
+}
 \section{CHANGES IN TREND VERSION 1.1.6 (2023-10-10)}{
 \subsection{OTHER CHANGES}{
     \itemize{

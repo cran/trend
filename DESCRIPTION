@@ -1,6 +1,6 @@
 Package: trend
-Version: 1.1.6
-Date: 2023-10-10
+Version: 1.1.7
+Date: 2026-07-13
 Title: Non-Parametric Trend Tests and Change-Point Detection
 Authors@R: person(given = "Thorsten", family = "Pohlert",
                  email = "thorsten.pohlert@gmx.de",
@@ -28,9 +28,10 @@ License: GPL-3
 Encoding: UTF-8
 ZipData: yes
 NeedsCompilation: yes
-RoxygenNote: 7.2.2
-Packaged: 2023-10-10 07:57:22 UTC; thorsten
-Author: Thorsten Pohlert [aut, cre] (<https://orcid.org/0000-0003-3855-3025>)
+Config/roxygen2/version: 8.0.0
+Packaged: 2026-07-14 13:05:50 UTC; thorsten
+Author: Thorsten Pohlert [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3855-3025>)
 Maintainer: Thorsten Pohlert <thorsten.pohlert@gmx.de>
 Repository: CRAN
-Date/Publication: 2023-10-10 08:50:02 UTC
+Date/Publication: 2026-07-14 13:40:02 UTC
