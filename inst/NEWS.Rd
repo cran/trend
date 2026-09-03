@@ -1,6 +1,14 @@
 \name{NEWS}
 \title{trend News}
 \encoding{UTF-8}
+\section{CHANGES IN TREND VERSION 1.1.8 (2026-09-03)}{
+\subsection{NEW FEATURES}{
+    \itemize{
+     \item Added function \code{itam} that implements the 
+     innovative trend analysis method of Sen (2012)
+    }
+  }
+}
 \section{CHANGES IN TREND VERSION 1.1.7 (2026-07-14)}{
 \subsection{OTHER CHANGES}{
     \itemize{

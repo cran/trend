@@ -1,5 +1,5 @@
-b1e2271bf5cb749f407c06e30f99e9df *DESCRIPTION
-79f43f37ad613a3ba39091bcca02d7fc *NAMESPACE
+d8a0823c77f915ed101426e477b0a1c0 *DESCRIPTION
+716cd258d95895325e93aebc8d62e946 *NAMESPACE
 2594b50ea10716f3e0a66ca0cc8be2f6 *R/PagesData.R
 e01edb7d8c4664abafd75a3efa0d544a *R/bartels.test.R
 9bfb6efac8e38a73349318099f8e020e *R/br.test.R
@@ -7,6 +7,7 @@ e01edb7d8c4664abafd75a3efa0d544a *R/bartels.test.R
 8f98516668843743719a21fea6e80a4f *R/cs.test.R
 53c774b6cccf4b7f7384b2b6c35d9faf *R/csmk.test.R
 2a7158d0ad292ace095113051edefbe0 *R/hcb.R
+a5260bd7bbca1ef3aa8472237d70db90 *R/itam.R
 673df99aaf45638f585636a96403387c *R/lanzante.test.R
 38362bf54739d3e781029d6474bea7e6 *R/maxau.R
 880d3cfadc155ba56af1ef9d6a91c249 *R/mk.test.R
@@ -29,10 +30,10 @@ c43b5c7cae1d3a582d71773c9b05b896 *R/wm.test.R
 739583c2968bafaa5a1a3f1867e852e5 *data/PagesData.rda
 8ceb933e541d3ed0161c675b68d2650c *data/hcb.rdata
 8fe532260d420f6e10c98c373e5a99e3 *data/maxau.rdata
-d3f5eedf9f0ebe2edacba8878ac07274 *inst/NEWS.Rd
+45a84d8e0a3bc7eacf139b8328917210 *inst/NEWS.Rd
 74645983561f99611e39d0eb1d4db638 *inst/doc/trend.R
 721a32e81cb0ce65daa9a22693884531 *inst/doc/trend.Rnw
-9dee0e73600ac4a2773e98a3aea8845a *inst/doc/trend.pdf
+aac130006318f8a8e903c4e210be61a8 *inst/doc/trend.pdf
 c7de17df9fbb18fede38aab06c7785e7 *man/PagesData.Rd
 d647537d797e318f5ad8b583f9d504db *man/bartels.test.Rd
 0fe1676929fa682ee2efd53f83638885 *man/br.test.Rd
@@ -40,6 +41,7 @@ ad046434dc129107ce84fb0a7895bfd6 *man/bu.test.Rd
 ac2d96d3bd18447c54ae5be43ac45164 *man/cs.test.Rd
 993e1abc94e5a943922b2c75612d2eec *man/csmk.test.Rd
 e2fe03d967df88fb39cb38b002929d52 *man/hcb.Rd
+8d93955863048cd31972259f3e4e01e4 *man/itam.Rd
 4a9e539bba1a84ccea1cda4bb70e3a77 *man/lanzante.test.Rd
 914a6aba347dcca4ae06d7fc060dcd60 *man/maxau.Rd
 d515743490a6cf4494881600aa0ce07e *man/mk.test.Rd
@@ -48,6 +50,7 @@ d515743490a6cf4494881600aa0ce07e *man/mk.test.Rd
 956445d7569dab41043f2e4cf06604d5 *man/partial.mk.test.Rd
 b0eca6644d01d9fa300a1a363e482794 *man/pettitt.test.Rd
 7f26920c79fac91bf534f0399b50732b *man/plot.cptest.Rd
+daf24214ed43844fdfbfe911f5f86dfe *man/plot.itam.Rd
 c66d7b16d732f4b0c154cd730d61f0e9 *man/rrod.test.Rd
 5629c8533524c145abf373bfcc0332bd *man/sea.sens.slope.Rd
 33cddce15ad9a4b7a2500cccbdf5c2f4 *man/sens.slope.Rd
