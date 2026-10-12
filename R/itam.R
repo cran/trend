@@ -85,10 +85,12 @@ itam <- function(x, conf.level = 0.95) {
   # estimate
   b <- 2 * (mean(x2) - mean(x1)) / n
   # sd of slope
-  sigma <- 2 * sqrt(2) / (n * sqrt(n)) * sd(x) * sqrt(1 - cor(x1, x2))
-
+  sigma <- sd(x)
+  var0 <- 8 * sigma^2 / n^2 * (1 - cor(x1, x2))
+  sd0 <- sqrt(var0)
+  
   # z-value
-  z = b / sigma
+  z = b / sd0
   # p-value
   pval <- 2 * min(0.5, pnorm(abs(z), lower.tail = FALSE))
 
@@ -100,7 +102,7 @@ itam <- function(x, conf.level = 0.95) {
   ans <- list(
     method = "Innovative Trend Analysis Method",
     data.name = dname,
-    estimates = c(`Sen's ITA slope` = b, SD = sigma),
+    estimates = c(`Sen's ITA slope` = b, SD = sd0),
     statistic = c(z = z),
     p.value = pval,
     alternative = "two.sided",

@@ -1,4 +1,4 @@
-d8a0823c77f915ed101426e477b0a1c0 *DESCRIPTION
+891f752d2b37c4d49fcbb536b7a8216e *DESCRIPTION
 716cd258d95895325e93aebc8d62e946 *NAMESPACE
 2594b50ea10716f3e0a66ca0cc8be2f6 *R/PagesData.R
 e01edb7d8c4664abafd75a3efa0d544a *R/bartels.test.R
@@ -7,7 +7,7 @@ e01edb7d8c4664abafd75a3efa0d544a *R/bartels.test.R
 8f98516668843743719a21fea6e80a4f *R/cs.test.R
 53c774b6cccf4b7f7384b2b6c35d9faf *R/csmk.test.R
 2a7158d0ad292ace095113051edefbe0 *R/hcb.R
-a5260bd7bbca1ef3aa8472237d70db90 *R/itam.R
+3ae02d948a306f659bbb72b948dcb6a8 *R/itam.R
 673df99aaf45638f585636a96403387c *R/lanzante.test.R
 38362bf54739d3e781029d6474bea7e6 *R/maxau.R
 880d3cfadc155ba56af1ef9d6a91c249 *R/mk.test.R
@@ -30,10 +30,10 @@ c43b5c7cae1d3a582d71773c9b05b896 *R/wm.test.R
 739583c2968bafaa5a1a3f1867e852e5 *data/PagesData.rda
 8ceb933e541d3ed0161c675b68d2650c *data/hcb.rdata
 8fe532260d420f6e10c98c373e5a99e3 *data/maxau.rdata
-45a84d8e0a3bc7eacf139b8328917210 *inst/NEWS.Rd
+856d15a0b3cd5584387d04aba07d3fd7 *inst/NEWS.Rd
 74645983561f99611e39d0eb1d4db638 *inst/doc/trend.R
 721a32e81cb0ce65daa9a22693884531 *inst/doc/trend.Rnw
-aac130006318f8a8e903c4e210be61a8 *inst/doc/trend.pdf
+b017535242f8cf8a5f9fe10ca740c639 *inst/doc/trend.pdf
 c7de17df9fbb18fede38aab06c7785e7 *man/PagesData.Rd
 d647537d797e318f5ad8b583f9d504db *man/bartels.test.Rd
 0fe1676929fa682ee2efd53f83638885 *man/br.test.Rd
